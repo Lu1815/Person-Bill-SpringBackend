@@ -19,9 +19,10 @@ public class Factura {
     @Temporal(TemporalType.TIMESTAMP)
     private Date fecha;
 
+    @Column(nullable = false)
     private float monto;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "fkPersonaId", referencedColumnName = "persona_id")
     private Persona fkPersonaId;
 

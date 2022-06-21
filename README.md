@@ -1,6 +1,6 @@
 # SPRING BOOT API
 
-Basic API made to learn the basis from SRING BOOT.
+Basic API made to learn the basis from SRING BOOT and to be consumed in this frontend app [PersonsBillsApp](https://github.com/Lu1815/Person-Bill-ReactFrontend).
 
 The endpoints are:
 

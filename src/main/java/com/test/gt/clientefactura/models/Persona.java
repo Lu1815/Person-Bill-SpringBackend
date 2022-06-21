@@ -28,7 +28,7 @@ public class Persona {
     @OneToMany(
         fetch = FetchType.LAZY,
         mappedBy = "fkPersonaId",
-        cascade = CascadeType.ALL,
+        cascade = CascadeType.MERGE,
         orphanRemoval = true
         )
     private Set<Factura> facturas = new HashSet<>();
